@@ -1,3 +1,8 @@
+{% load cache %}
+{% cache 60 mycach %}
+
 {% for k in my_context %}
 <p>{{k.title}}</p>
 {%endfor %}
+
+{% endcache %}
